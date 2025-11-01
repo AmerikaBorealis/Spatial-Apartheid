@@ -1,0 +1,1 @@
+The Spatial Apartheid Project is a work of decolonial geography. As allied settlers, reformed invaders, decendents of enslaved africans, or colonized people on turtle island, a special responsibility is asked of us to use our recourses, skills, talents, and know how to dismantle the colonial aparatuses that are within our personal sphere of influence.
