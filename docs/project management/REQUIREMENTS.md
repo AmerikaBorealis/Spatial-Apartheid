@@ -33,7 +33,8 @@ November 14, 2025
 	- [8.1 User Roles](#81-user-roles)
 	- [8.2 Accessibility Requirements](#82-accessibility-requirements)
 - [9.0 Implementation Plan](#90-implementation-plan)
-	- [9.1 Development Phases]
+	- [9.1 Local Development Phases](#91-local-development-phase-months-1-9)
+	- [9.2 Cloud Migration Phase](#92-cloud-migration-phase-months-10-11)
 - 10.0 Success Criteria
 	- 10.1 Quantitative Metrics
 	- 10.2 Qualitative Metrics
@@ -82,6 +83,7 @@ Primary stakeholders include:
 # 3.0 Development Strategy
 
 ## 3.1 Phased Infrastructure Approach
+
 ### Phase 1: Local Development Environment
 - Consumer-grade personal hardware setup at home
 - PostgreSQL + PostGIS on local machine
@@ -95,6 +97,7 @@ Primary stakeholders include:
 - Public accessibility and scalability
 
 ## 3.2 GitHub Development
+
 ### Repository Structure:
 
 ``` plain
@@ -108,6 +111,7 @@ spatial-apartheid-dataset/
 ├── tests/ # Test suites
 └── .github/ # GitHub Actions workflows 
 ```
+
 ### Development Practices:
 - Feature branch workflow with pull requests
 - Continuous Integration with GitHub Actions
@@ -116,6 +120,7 @@ spatial-apartheid-dataset/
 - Comprehensive documentation in markdown
 
 # 4.0 Functional Requirements
+
 ## 4.1 Data Management
     REQ-1. The system SHALL store spatial data including polygons, points, and lines representing historical boundaries, locations, and infrastructure
     REQ-2. The system SHALL maintain temporal data to track changes over time periods
@@ -138,6 +143,7 @@ spatial-apartheid-dataset/
 # 5.0 Technical Requirements
 
 ## 5.1 Local Hardware Requirements
+
 ### Minimum Specifications:
 - Processor: Intel i5 or AMD Ryzen 5 (4+ cores)
 - RAM: 16GB minimum, 32GB recommended
@@ -152,7 +158,9 @@ spatial-apartheid-dataset/
 - Python 3.9+, API/scripting
 - QGIS 3.34+, GIS development
 - VS Code, IDE
+
 ## 5.3 Google Cloud Platform
+
 ### Target GCP Architecture
 - Cloud SQL for PostgreSQL, managed database with PostGIS
 - Cloud Storage - Data archives and backups
@@ -162,6 +170,7 @@ spatial-apartheid-dataset/
 - BigQuery - Analytics and reporting
 
 ## 5.4 Migration Strategy
+
 ### Step 1: Database Export
 ```bash
 pg_dump -h localhost -U postgres -d spatial_apartheid \
@@ -212,6 +221,7 @@ gs://spatial-apartheid-bucket/database.dump \
 - Attribute completeness: >95% for core fields
 - Metadata compliance: ISO 19115/19139 standards
 - Coordinate system: WGS84 (EPSG:4326) for global data
+
 # 7.0 System Requirements
 
 ## 7.1 Performance Requirements
@@ -273,6 +283,7 @@ Administrator:
 # 9.0 Implementation Plan
 
 ## 9.1 Local Development Phase (Months 1-9)
+
 ### Months 1-2: Foundation
 - Set up local development environment
 - Initialize GitHub repository
@@ -317,36 +328,6 @@ Administrator:
 - Public launch
 - Outreach and training
 
-## 9.4 Development Phases
-Phase 1: Infrastructure Setup (Months 1-2)
-- PostgreSQL/PostGIS installation and configuration
-- Database schema design and implementation 
-- Development environment setup
-- Security framework implementation
-
-Phase 2: Core Functionality (Months 3-5)
-- Data import/export modules
-- Basic query interface
-- GIS integration
-- Initial data loading
-
-Phase 3: Web Interface (Months 6-8)
-- Web application development
-- Interactive mapping interface
-- User authentication system
-- API development
-
-Phase 4: Advanced Features (Months 9-11)
-- Advanced analysis tools
-- Visualization enhancements
-- Documentation and tutorials
-- Performance optimization
-
-Phase 5: Testing and Deployment (Month 12)
-- System testing and quality assurance
-- User acceptance testing
-- Production deployment
-- Launch and public announcement
 # 10.0 Success Criteria
 
 ## 10.1 Quantitative Metrics
