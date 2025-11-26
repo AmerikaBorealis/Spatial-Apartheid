@@ -1,9 +1,12 @@
+Requirements Document
+==============
 
-Software Requirements Document
-Spatial Apartheid Dataset
-Version 2.0
-November 14, 2025
+***Software Requirements Document  
+Spatial Apartheid Dataset  
+Version 2.0  
+November 14, 2025***  
 
+# Table of Content
 - [1.0 Summary](#10-summary)
 - [2.0 Project Overview](#20-project-overview)
 	- [2.1 Purpose](#21-purpose)
@@ -18,7 +21,7 @@ November 14, 2025
 	- [4.3 Visualization](#43-visualization)
 - [5.0 Technical Requirements](#50-technical-requirements)
 	- [5.1 Local Hardware Requirements](#51-local-hardware-requirements)
-	- [5.2 Software Stack](52-software-stack)
+	- [5.2 Software Stack](#52-software-stack)
 	- [5.3 Google Cloud Platform](#53-google-cloud-platform)
 	- [5.4 Migration Strategy](#54-migration-strategy)
 	- [5.5 Cloud Cost Estimates](#55-cloud-cost-estimates)
@@ -35,17 +38,19 @@ November 14, 2025
 - [9.0 Implementation Plan](#90-implementation-plan)
 	- [9.1 Local Development Phases](#91-local-development-phase-months-1-9)
 	- [9.2 Cloud Migration Phase](#92-cloud-migration-phase-months-10-11)
-- 10.0 Success Criteria
-	- 10.1 Quantitative Metrics
-	- 10.2 Qualitative Metrics
-- 11.0 Risk Management
-	- 11.1 Technical Risks
-	- 11.2 Operational Risks
-- 12.0 Conclusion
-- Appendix A: Glossary
+- [10.0 Success Criteria](#100-success-criteria)
+	- [10.1 Quantitative Metrics](#101-quantitative-metrics)
+	- [10.2 Qualitative Metrics](#102-qualitative-metrics)
+- [11.0 Risk Management](#110-risk-management)
+	- [11.1 Technical Risks](#111-technical-risks)
+	- [11.2 Operational Risks](#112-operational-risks)
+- [12.0 Conclusion](#120-conclusion)
+- [Appendix A: Glossary](#appendix-a-glossary)
+- [Appendix B: GitHub Integraton](#appendix-b-github-integration)
+- [Appendix C: Technical Architecture](#appendix-c-technical-architecture)
+- [Appendix D: Future GeoServer Plan](#appendix-d-future-geoserver-plan)
 
-
-
+---
 
 # 1.0 Summary
 The Spatial Apartheid Dataset project aims to create a publicly accessible, comprehensive dataset and analytical toolkit for the spatial study of apartheid and settler colonial structures. This initiative follows a pragmatic development approach, beginning with local development on consumer hardware and progressing to a cloud-based production deployment on Google Cloud Platform.
@@ -419,7 +424,7 @@ Pull Request Template:
 - Migration notes 
 - Documentation updates
 
-# Appendix C Technical Architecture
+# Appendix C: Technical Architecture
 This supports the development of a cohesive data schemas for the Apartheid Spatial Dataset.
 ## Database Design
 ### Core Tables:
@@ -443,7 +448,7 @@ RESTful Endpoints:
 - GET /api/v1/export - Export data
 - POST /api/v1/upload - Upload data (auth required)
 
-# Appendix D Future GeoServer Plan
+# Appendix D: Future GeoServer Plan
 
 ```mermaid
 flowchart TD
